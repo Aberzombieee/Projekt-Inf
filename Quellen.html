@@ -4,61 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
-    <style>body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-      }
-      
-      /* Header/logo Title */
-      .header {
-        padding: 80px;
-        text-align: center;
-        background: #4a2511;
-        color: white;
-      }
-      
-      /* Increase the font size of the heading */
-      .header h1 {
-        font-size: 40px;
-      }
-      
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      /* Style the navigation bar links */
-      .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-      
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-      
-      /* Change color on hover */
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-    </style>
-      </head>
+    </head>
 </head>
 <body>
     <div class="header">
@@ -67,12 +15,43 @@
       </div>
       
       <div class="navbar">
-        <a href="index.html
-        ">Seite 1</a>
+        <a href="index.html">Home</a>
+        <a href="template2.html">Seite 1</a>
         <a href="template2.html">Seite 2</a>
-        <a href="Quellen.html">Quellen</a>
         <a href="#" class="right">Link</a>
       </div>
+      <h2>Quellen</h2>
+      <a href="index.html#Bild-1">Bildquelle:MajiMaji-Krieg</a>
+      <br>
+      <br>
+      <a href="index.html#Bild-2">Textquelle: Zwangsarbeit</a>
+      <style>
+        li {
+          list-style: none;
+          padding: 10px;
+          margin: 0;
+          border-bottom: 1px solid gray;
+        }
+        
+        td {
+          padding: 10px;
+          border-bottom: 1px solid gray;
+        }
+      </style> 
+      <table>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+        <tr>
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+        </tr>
+      </table>
       
-</body>
+    </body>
 </html>
