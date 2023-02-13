@@ -97,5 +97,11 @@ body {
 @media (min-width: 801px) {
     .Text-info {
         width: 1200px;
+        font-size: 20px;
+    }
+
+
+    .pinfo {
+        font-size: 200px;
     }
 }
