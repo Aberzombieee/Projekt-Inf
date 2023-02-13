@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #4a2511;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 90px;
+}
+
+.navbar a.right {
+    float: right;
+    border-radius: 90px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.maji {
+    width: 900px;
+}
+
+.Zwangsarbeit {
+    width: 800px;
+    padding: 2vh;
+
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.p1-r {
+    text-align: justify;
+}
+
+
+
+@media (max-width: 800px) {
+    .Text-info {
+        width: 400;
+    }
+}
+
+@media (min-width: 801px) {
+    .Text-info {
+        width: 1200px;
+    }
+}

@@ -1,107 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #4a2511;
-  color: white;
-}
-.header h1 {
-  font-size: 40px;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  border-radius: 90px;
-}
-
-.navbar a.right {
-  float: right;
-  border-radius: 90px;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.row {  
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-}
-
-.side {
-  -ms-flex: 30%; 
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-
-.main {   
-  -ms-flex: 70%; 
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-.img {
-  width: 50%;
-  padding: 2vh;
-  float: left;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-.p1-r{
-  text-align: justify;
-}
-
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
 </head>
 <body>
 
@@ -121,11 +26,9 @@ body {
   <div class="main">
     <h2>Generelle Informationen zur Kolonialzeit und dem Maji-Maji Krieg in Deutsch-Ostafrika  </h2>
     <h5>Title description, Dec 7, 2017</h5>
-    <div>
-      <img src="img/MajiMaji.png" class="img" id="Maji">
-    </div>
-    
-    
+    <img src="img/MajiMaji.png">
+        
+  <div class="Text-info"> 
     <p class="p1-r">Deutsch-Ostafrika wurde 1884 von Deutschland erobert und gegründet. Schon seit der Eroberung kam es zu Aufständen, welche aber immer niedergeschlagen wurden. Zudem blieben diese Aufstände regional begrenzt, da die Stämme in Ostafrika untereinander zerstritten waren. Bis 1898 konnten die deutsche Kolonialmacht einen Grossteil des Landes erobern. 
       Die Situation eskalierte jedoch; Die Deutschen versuchten die Wirtschaftskraft durch den Baumwollanbau zu steigern. Da dies scheiterte zog die Kolonialmacht Steuern von den Einheimischen ein. Am Anfang gab es nur eine Hüttensteuer, danach auch eine Kopfsteuer. Wer seine Steuern nicht bezahlte, bezahlte diese im Gefängnis mit Zwangsarbeit ab. Weitere Faktoren für die Eskalation sind die Respektlosigkeit der Deutschen, Verbot der Grosswildjagd, Bestrafung bei Versäumnis der Anordnungen sowie der erzwungene Anbau von Baumwolle.
       Etwa 20 Stämme vereinten sich gegen die Deutschen. Es kam zum Maji-Maji Krieg, bei dem viele Ostafrikaner gestorben sind. Die Folgen der deutschen Kriegsführung waren der Krieg, eine Hungernot und epidemische Krankheiten. Wobei 200'000 bis zu 300'000 Ostafrikaner gestorben sind. 
@@ -133,12 +36,23 @@ body {
       Eines der deutschen Ziele war es, an Ressourcen zu gewinnen. Auf gemeinschaftlichen Feldern sollten die Ostafrikaner Baumwolle anbauen. Jedoch war dies nicht profitabel für die Deutschen. Deswegen fingen diese an für jegliches Steuern zu verlangen, um an Geld zu kommen.
       Auftreten der Deutschen war sehr respektlos und niederlassend gegenüber den Ostafrikanern. Das führte dazu, dass die Ostafrikaner einen Groll auf die Deutschen entwickelten. Gründe für ihren Groll waren zum Beispiel das Verbot der Grosswildjagd durch Einheimische und die «rigorosen Strafen bei jedem Versäumnis».  </p>
     <p>
+  </div>
     <br>
-    <h3>Wie haben die Einheimischen den Maji-Maji Krieg beziehungsweise die Kolonialzeit wahrgenommen?</h3>
+    <h3 class="header-Kolonialzeit">Wie haben die Einheimischen den Maji-Maji Krieg beziehungsweise die Kolonialzeit wahrgenommen?</h3>
     <h5>Title description, Sep 2, 2017</h5>
-    <img src="img/Aussagen_Zwangsarbeiter.png" class="img" id="Arbeit">
+    <img src="img/Aussagen_Zwangsarbeiter.png" class="Zwangsarbeit">
+    <div class="Text-info">   
     <p>Diese Textquelle stammt von einem ostafrikanischen Zwangsarbeiter. Dieser wurde von einem Reporter befragt, der diesen Text aufgeschrieben hat. Der Zwangsarbeiter war tätig am Eisenbahnbau unter der Macht von Deutschland. Die Quelle ist 1897 entstanden und wurde 2005 (wieder)veröffentlicht. Der Befragte nimmt keine Stellung zur über ihm herrschende Kolonialmacht an. Jedoch kann man erkennen das der Befragte sehr unter der deutschen Aufsicht und Macht gelitten hat. Es wird berichtet wie er und die einheimischen Zwangsarbeiter geschlagen und ausgepeitscht wurden ehe sie einen Fehler machten oder aufhörten zu arbeiten. Der befragte Ostafrikaner fühlt sich verbündet mit den anderen Einheimischen, er bezeichnet sich als Teil von ihnen. Das sieht man am folgenden Zitat; „Wir, die Zwangsarbeiter“ (ebd. Zeile 1). Ausserdem mussten die Jumben ihre Männer strafen. Deswegen kann man in diesem Fall von zuteils von einer (partiellen) indirekten Herrschaft sprechen. Jedoch nicht ganz denn trotzdem haben die Deutschen die Macht vor Ort übernommen und über Ostafrika geherrscht. </p>
   </div>
+  </div>
 </div>
+<script>
+  const images = document.querySelectorAll('.img');
+  mediumZoom(images, {
+    margin: 24,
+    background: '#ffffff',
+    scrollOffset: 40
+  });
+</script>
 </body>
 </html>
