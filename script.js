@@ -1,11 +1,12 @@
 window.onload = function () {
-    const images = document.querySelectorAll('.img');
+    const images = document.querySelectorAll('img');
     mediumZoom(images, {
         margin: 24,
         background: '#ffffff',
         scrollOffset: 40
     });
 
+    // Line Graph zeichnen  
     const options = {
         type: 'line',
         data: {
@@ -29,13 +30,14 @@ window.onload = function () {
     const ctx = document.getElementById('myChart');
     new Chart(ctx, options);
 
+    // Karte zeichnen 
     const position = ol.proj.transform([Number(34.8888), Number(-6.3690)], 'EPSG:4326', 'EPSG:3857');
     const map = new ol.Map({
         target: 'map',
         layers: [
             new ol.layer.Tile({
                 source: new ol.source.OSM(),
-            }),
+            })
         ],
         view: new ol.View({
             center: position,
