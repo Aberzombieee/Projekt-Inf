@@ -44,12 +44,7 @@ body {
     color: black;
 }
 
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+
 
 .side {
     -ms-flex: 30%;
@@ -67,11 +62,11 @@ body {
 }
 
 .maji {
-    width: 900px;
+    width: 100%;
 }
 
 .Zwangsarbeit {
-    width: 800px;
+    width: 100%;
     padding: 2vh;
 
 }
@@ -86,22 +81,45 @@ body {
     text-align: justify;
 }
 
+.Quellen {
+    margin-left: 20px;
+    width: 35vh
+}
 
+.charts {
+    float: left;
+    width: 100%;
+}
 
-@media (max-width: 800px) {
-    .Text-info {
-        width: 400;
+p {
+    font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
-@media (min-width: 801px) {
-    .Text-info {
-        width: 1200px;
-        font-size: 20px;
+@media (min-width: 986px) {
+    body {
+        padding-left: 30px;
+        padding-right: 30px;
     }
+}
 
-
-    .pinfo {
-        font-size: 20px;
+@media (min-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
     }
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
 }
