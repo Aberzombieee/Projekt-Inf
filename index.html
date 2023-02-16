@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
-<script>
-  function scrollToTarget() {
-    // get the target element
-    const target = document.querySelector("#target-element");
-
-    // scroll to the target element
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <div class="header">
   <h1>Deutsch-Ostafrika</h1>
-  <p>A website created by me.</p>
+  <p>Kolonialismus und Maji-Maji-Krieg</p>
 </div>
 
 <div class="navbar">
@@ -48,23 +41,18 @@
     <p>
   </div>
     <br>
-    <h3 class="header-Kolonialzeit">Wie haben die Einheimischen den Maji-Maji Krieg beziehungsweise die Kolonialzeit wahrgenommen?</h3>
+    <h2>Wie haben die Einheimischen den Maji-Maji Krieg beziehungsweise die Kolonialzeit wahrgenommen?</h2>
     <h5>Title description, Sep 2, 2017</h5>
     <img src="img/Aussagen_Zwangsarbeiter.png" class="Zwangsarbeit" id="Bild-2">
-    <div class="Text-info">   
+    <div class="pinfo">   
     <p class="pinfo">Diese Textquelle stammt von einem ostafrikanischen Zwangsarbeiter. Dieser wurde von einem Reporter befragt, der diesen Text aufgeschrieben hat. Der Zwangsarbeiter war tätig am Eisenbahnbau unter der Macht von Deutschland. Die Quelle ist 1897 entstanden und wurde 2005 (wieder)veröffentlicht. Der Befragte nimmt keine Stellung zur über ihm herrschende Kolonialmacht an. Jedoch kann man erkennen das der Befragte sehr unter der deutschen Aufsicht und Macht gelitten hat. Es wird berichtet wie er und die einheimischen Zwangsarbeiter geschlagen und ausgepeitscht wurden ehe sie einen Fehler machten oder aufhörten zu arbeiten. Der befragte Ostafrikaner fühlt sich verbündet mit den anderen Einheimischen, er bezeichnet sich als Teil von ihnen. Das sieht man am folgenden Zitat; „Wir, die Zwangsarbeiter“ (ebd. Zeile 1). Ausserdem mussten die Jumben ihre Männer strafen. Deswegen kann man in diesem Fall von zuteils von einer (partiellen) indirekten Herrschaft sprechen. Jedoch nicht ganz denn trotzdem haben die Deutschen die Macht vor Ort übernommen und über Ostafrika geherrscht. </p>
     <h4>Welche Haltung nimmt der Autor zum Kolonialismus im Allgemeinen, zu dieser Kolonie im Speziellen ein?</h2>
     <p class="pinfo"> Welche Haltung nimmt er gegenüber den Einheimischen ein? Der Zwangsarbeiter berichtet, wie die Aufseher mit den Zwangsarbeitern umgegangen sind. Die Arbeiter wurden geschlagen und gepeitscht sollten sie aufhören zu arbeiten oder einen Fehler machen. Der Berichtende erlebt den Kolonialismus sehr brutal sowie negativ. Es wird nicht erwähnt, was er über die deutschen Kolonialherren denkt. Jedoch kann man sagen er sowie viele andere Zwangsarbeiter unter der Kolonialmacht litten, deswegen kann man in diesem Fall von zuteils von einer (partiellen) indirekten Herrschaft sprechen. Jedoch nicht ganz denn trotzdem haben die Deutschen die Macht vor Ort übernommen und über Ostafrika geherrscht.</p>
   </div>
   </div>
+
+  <div height="20em" ><canvas id="myChart"></canvas></div>
 </div>
-<script>
-  const images = document.querySelectorAll('.img');
-  mediumZoom(images, {
-    margin: 24,
-    background: '#ffffff',
-    scrollOffset: 40
-  });
-</script>
+
 </body>
 </html>
