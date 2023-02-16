@@ -1,0 +1,11 @@
+li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid gray;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
