@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
     </head>
@@ -21,10 +24,6 @@
         <a href="#" class="right">Link</a>
       </div>
       <h2>Quellen</h2>
-      <a href="index.html#Bild-1">Bildquelle:MajiMaji-Krieg</a>
-      <br>
-      <br>
-      <a href="index.html#Bild-2">Textquelle: Zwangsarbeit</a>
       <style>
         li {
           list-style: none;
@@ -38,20 +37,45 @@
           border-bottom: 1px solid gray;
         }
       </style> 
-      <table>
-        <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
-        </tr>
-        <tr>
-          <td>Row 1, Column 1</td>
-          <td>Row 1, Column 2</td>
-        </tr>
-        <tr>
-          <td>Row 2, Column 1</td>
-          <td>Row 2, Column 2</td>
-        </tr>
+      <table id="table_id" class="display">
+        <thead>
+          <tr>
+            <th>Typ</th>
+            <th>Quellenname</th>
+            <th>Datum</th>
+            <th>Autor</th>
+            <th>Werk</th>
+            <th>Seite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bild</td>
+            <td>Kriegslager in der Boma von Mahenge</td>
+            <td>2010</td>
+            <td>Unbekannt</td>
+            <td>Geschichte Lernen</td>
+            <td>134</td>
+          </tr>
+          <tr>
+            <td>Text & Bild</td>
+            <td>Aussage eines Zwangsarbeiters aus dem Jahr 1897</td>
+            <td>2005</td>
+            <td>Becker, F./Beez,J.</td>
+            <td>Der Maji Maji Krieg </td>
+            <td>44</td>
+          </tr>
+        </tbody>
       </table>
-      
+      <h3>Hier gehts direkt zu den Quellen:</h3>
+      <ul>
+        <li><a href="index.html#Bild-1">Bildquelle:MajiMaji-Krieg</a></li>
+        <li> <a href="index.html#Bild-2">Textquelle: Zwangsarbeit</a></li>
+      </ul>
+      <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+      </script>
     </body>
 </html>
