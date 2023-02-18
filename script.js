@@ -37,7 +37,6 @@ window.onload = function () {
             url: '/img/Karte2.png',
             imageExtent: [3130000, -1380000,
                 4600000, 200000],
-            pixelRatio: 1
         })
     });
     // Grenzgebiet Maji-Maji Krieg
