@@ -12,7 +12,7 @@ window.onload = function () {
         data: {
             labels: ['1870', '1880', '1890', '1900', '1910', '1913'],
             datasets: [{
-                label: 'Nationaleinkommen Deutsches Reich',
+                label: 'Nationaleinkommen des Deutschen Reichs in milionen Mark',
                 data: [14275, 16686, 21565, 29445, 43288, 49501],
                 borderWidth: 1,
                 fill: 'origin',

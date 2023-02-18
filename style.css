@@ -54,18 +54,6 @@ body {
     width: 100%;
 }
 
-.Zwangsarbeit {
-    width: 100%;
-    padding: 2vh;
-
-}
-
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-
 .Quellen {
     margin-left: 20px;
     width: 35vh
@@ -78,6 +66,10 @@ body {
 
 p {
     font-size: 20px;
+}
+
+.active {
+    background-color: #555;
 }
 
 @media (min-width: 1024px) {
