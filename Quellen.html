@@ -1,83 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Document</title>
-	</head>
-	</head>
-	<body>
-		<div class="header">
-			<h1>Deutsch-Ostafrika</h1>
-			<p>A website created by me.</p>
-		</div>
-		<div class="navbar">
-			<a href="index.html">Home</a>
-			<a href="Jagdausflug.HTML">Ein Bild zur Kolonialzeit</a>
-			<a href="Zwangsarbeit.html">Aussagen eines Zwangsarbeiters</a>
+<html lang="de">
+  <head>
+	<title>Deutsch-Ostafrika</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Deutsch-Ostafrika</h1>
+      <p>A website created by me.</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Jagdausflug.HTML">Ein Bild zur Kolonialzeit</a>
+      <a href="Zwangsarbeit.html">Aussagen eines Zwangsarbeiters</a>
       <a href="Quellen.html" class="right active">Quellen</a>
-		</div>
-		<div>
-			<h2 class="Quellen">Quellen</h2>
-			<table id="table_id" class="display">
-				<thead>
-					<tr>
-						<th>Typ</th>
-						<th>Quellenname</th>
-						<th>Datum</th>
-						<th>Autor</th>
-						<th>Werk</th>
-						<th>Seite</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Bild</td>
-						<td><a href="index.html#Bild-1">Kriegslager in der Boma von Mahenge</a> <br><img src="img/MajiMaji.png" alt="Bild Maji Maji Krieg" width="100px"></td>
-						<td>2010</td>
-						<td>Unbekannt</td>
-						<td>Geschichte Lernen</td>
-						<td>134</td>
-					</tr>
-					<tr>
-						<td>Text & Bild</td>
-						<td><a href="Zwangsarbeit.html#Bild-1">Aussage eines Zwangsarbeiters aus dem Jahr 1897</a></td>
-						<td>2005</td>
-						<td>Becker, F./Beez,J.</td>
-						<td>Der Maji Maji Krieg </td>
-						<td>44</td>
-					</tr>
-					<tr>
-						<td>Daten</td>
-						<td><a href="Mommsen.html">Entwicklung und Struktur des Nationaleinkommens bzw. des Nationalprodukts <br> <img src="img/Daten.png" width="100px"></a></td>
-						<td>1977</td>
-						<td>Wolfgang Mommsen</td>
-						<td>Imperialismus. Seine geistigen, politischen und wirtschaftlichen Grundlagen.</td>
-						<td>32</td>
-					</tr>
-					<tr>
-						<td>Karte</td>
-						<td><a href="Karte.html"> Maji-Maji-Krieg: Stammesgebiete und Kriegsgebiet</a></td>
-						<td>2010</td>
-						<td>unbekannt</td>
-						<td>Geschichte Lernen 134</td>
-						<td>27</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<script>
-			$(document).ready( function () {
-			    $('#table_id').DataTable({
-            paging: false,
-            info: false,
-          });
-			} );
-		</script>
-	</body>
+    </div>
+    <div>
+      <h2 class="Quellen">Quellen</h2>
+      <table id="table_id" class="display">
+        <thead>
+          <tr>
+            <th>Typ</th>
+            <th>Quellenname</th>
+            <th>Datum</th>
+            <th>Autor</th>
+            <th>Werk</th>
+            <th>Seite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bild</td>
+            <td>
+              <a href="index.html#Bild-1">Kriegslager in der Boma von Mahenge</a>
+              <br>
+              <img src="img/MajiMaji.png" alt="Bild Maji Maji Krieg" width="100px">
+            </td>
+            <td>2010</td>
+            <td>Unbekannt</td>
+            <td>Geschichte Lernen 134</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Text & Bild</td>
+            <td>
+              <a href="Zwangsarbeit.html#Bild-1">Aussage eines Zwangsarbeiters aus dem Jahr 1897</a>
+              <br>
+              <img src="img/Aussagen_Zwangsarbeiter.png" alt="Aussagen Zwangsarbeiter" width="100px">
+            </td>
+            <td>2005</td>
+            <td>Becker, F./Beez,J.</td>
+            <td>Geschichte Lernen 134</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Daten</td>
+            <td>
+              <a href="Mommsen.html">Entwicklung und Struktur des Nationaleinkommens bzw. des Nationalprodukts <br>
+                <img src="img/Daten.png" alt="Entwicklung und Struktur des Nationaleinkommens bzw. des Nationalprodukts" width="100px">
+              </a>
+            </td>
+            <td>1977</td>
+            <td>Wolfgang Mommsen</td>
+            <td>Imperialismus. Seine geistigen, politischen und wirtschaftlichen Grundlagen.</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Karte</td>
+            <td>
+              <a href="Karte.html"> Maji-Maji-Krieg: Stammesgebiete und Kriegsgebiet</a>
+              <br>
+              <img src="img/Karte.png" alt="Karte-Maji-Maji" width="100px">
+            </td>
+            <td>2010</td>
+            <td>unbekannt</td>
+            <td>Geschichte Lernen 134</td>
+            <td>27</td>
+          </tr>
+		  <tr>
+			<td>Text & Bild</td>
+            <td>
+              <a href="Jagdausflug.HTML#Bild-1">Jagdausflug per Draisine auf der Mittellandbahn in Deutsch-Ostafrika, um 1910</a>
+              <br>
+              <img src="img/Jagdausflug.png" alt="Jagdausflug per Draisine auf der Mittellandbahn in Deutsch-Ostafrika, um 1910" width="100px">
+            </td>
+            <td>2005</td>
+            <td>Becker, F./Beez,J.</td>
+            <td>Geschichte Lernen 134</td>
+            <td>5</td>
+		  </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('#table_id').DataTable({
+          paging: false,
+          info: false,
+        });
+      });
+    </script>
+  </body>
 </html>
