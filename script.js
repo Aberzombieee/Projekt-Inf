@@ -17,7 +17,16 @@ window.onload = function () {
                 borderWidth: 1,
                 fill: 'origin',
                 backgroundColor: 'rgba(255,184,28,0.5)'
-            }]
+            },
+                // {
+                //     label: 'lolololololol',
+                //     data: [18363, 76235, 02837, 71263, 12453, 14364, 12364],
+                //     borderWidth: 1,
+                //     fill: 'origin',
+                //     backgroundColor: 'rgba(128,184,28,0.5)',
+                //     hidden: true
+                // }
+            ]
         },
         options: {
             scales: {
@@ -69,7 +78,7 @@ window.onload = function () {
     const map = new ol.Map({
         target: 'map',
         layers: [tileLayer, imageLayer, vectorLayer],
-        view: new ol.View({ center: [3900000, -760000], zoom: 6 }),
+        view: new ol.View({ center: [4200000, -920000], zoom: 6 }),
     });
     // map.on('click', function(evt){
     //     // Get the pointer coordinate
