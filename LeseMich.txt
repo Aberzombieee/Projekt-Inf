@@ -1,0 +1,2 @@
+Falls die Webseite nicht gut aussieht, bitte mit VisualStudioCode -> LiveServer öffnen 
+Oder über folgenden Link: https://aberzombieee.github.io/Projekt-Inf/
