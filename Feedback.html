@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Deutsch-Ostafrika</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Deutsch-Ostafrika</h1>
+      <p>Kolonialismus und Maji-Maji-Krieg</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Jagdausflug.HTML">Ein Bild zur Kolonialzeit</a>
+      <a href="Zwangsarbeit.html">Aussagen eines Zwangsarbeiters</a>
+      <a href="Feedback.html" class="active">Feedback</a>
+      <a href="Quellen.html" class="right">Quellen</a>
+    </div>
+    <div>
+    <form action="submit-feedback.php" method="POST">
+        <h2>Feedback geben</h2>
+      
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="bewertung">Bewertung:</label>
+        <select id="bewertung" name="bewertung" required>
+          <option value="5">5 Sterne</option>
+          <option value="4">4 Sterne</option>
+          <option value="3">3 Sterne</option>
+          <option value="2">2 Sterne</option>
+          <option value="1">1 Stern</option>
+        </select>
+      
+        <label for="kommentar">Kommentar:</label>
+        <textarea id="kommentar" name="kommentar"></textarea>
+      
+        <button type="submit">Feedback senden</button>
+      </form>
+    </div>      
+  </body>
+</html>
