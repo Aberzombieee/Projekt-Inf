@@ -44,10 +44,7 @@ body {
 }
 
 .main {
-    -ms-flex: 70%;
-    flex: 70%;
     background-color: white;
-    padding: 20px;
 }
 
 .maji {
@@ -127,6 +124,10 @@ textarea {
 
 .submit-button:hover {
     background-color: #0069d9;
+}
+
+.border {
+    border: 3px solid grey;
 }
 
 @media (min-width: 1024px) {
