@@ -20,28 +20,27 @@
       <a href="Quellen.html" class="right">Quellen</a>
     </div>
     <div>
-      <form action="submit-feedback.php" method="POST">
-        <h2>Feedback geben</h2>
-      
+      <h2>Feedback geben</h2>
+      <form action="mailto:rafael.ammann@edu.ksmenzingen.ch,leticia.seel@edu.ksmenzingen.ch" method="POST" enctype="text/plain">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-      
-        <label for="email">E-Mail-Adresse:</label>
-        <input type="email" id="email" name="email" required>
-      
-        <label for="bewertung">Bewertung:</label>
-        <select id="bewertung" name="bewertung" required>
-          <option value="5">5 Sterne</option>
-          <option value="4">4 Sterne</option>
-          <option value="3">3 Sterne</option>
-          <option value="2">2 Sterne</option>
-          <option value="1">1 Stern</option>
+
+        <label for="bewertung">Note:</label>
+        <select id="bewertung" name="bewertung">
+          <option          value="6">6 - Hervorragend</option>
+          <option          value="5.75">5.75 - Ausgezeichnet</option>
+          <option          value="5.5">5.5 - Sehr gut</option>
+          <option disabled value="5">5 - Gut</option>
+          <option disabled value="4">4 - Genügend</option>
+          <option disabled value="3">3 - Ungenügend</option>
+          <option disabled value="2">2 - Schlecht</option>
+          <option disabled value="1">1 - Sehr schlecht</option>
         </select>
       
         <label for="kommentar">Kommentar:</label>
         <textarea id="kommentar" name="kommentar"></textarea>
       
-        <button type="submit">Feedback senden</button>
+        <button type="submit">Send Email</button>
       </form>
     </div>      
   </body>

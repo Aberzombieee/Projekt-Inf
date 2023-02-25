@@ -130,6 +130,10 @@ textarea {
     border: 3px solid grey;
 }
 
+.image-w {
+    width: 100%;
+}
+
 @media (min-width: 1024px) {
     body {
         padding-left: 40px;
